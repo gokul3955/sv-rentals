@@ -1,3 +1,4 @@
+/* Reset some default styles */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +6,61 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa; /* Light background color */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Override Bootstrap's default container padding (if you want more control) */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Make the navbar stick to the top */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Add some custom styles for section headers */
+section h2 {
+  color: #007bff; /* Blue color for section headers */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Style for the buttons */
+button, .btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+}
+
+button:hover, .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Add some margin-bottom to form elements */
+form input, form textarea, form button {
+  margin-bottom: 1rem;
+}
+
+/* Custom Footer Style */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
