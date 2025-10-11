@@ -9,7 +9,7 @@ const Header = () => {
     const sectionMap = {
       'home': 'hero-banner',
       'our-materials': 'our-materials',
-      'how-it-works': 'how-it-works',
+      'how-it-works': 'how-renting-works',
       'contact': 'contact',
       'about': 'about'
     };

@@ -1,8 +1,9 @@
 .product-section {
-  background: white;
-  padding: 6rem 2rem;
+  background: #E8EDFF;
+  padding: 8rem 2rem 6rem 2rem;
   min-height: 600px;
   position: relative;
+  margin-top: 2rem;
 }
 
 .product-section::before {
@@ -22,9 +23,10 @@
 }
 
 .section-title {
-  color: #1f2937;
+  color: #2563eb !important;
   text-align: center;
   font-size: 3.5rem;
+  margin-top: 2rem;
   margin-bottom: 4rem;
   font-weight: 800;
   font-family: 'Inter', sans-serif;
