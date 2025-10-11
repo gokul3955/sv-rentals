@@ -22,6 +22,14 @@
   margin: 0 auto;
 }
 
+.subsection {
+  margin-bottom: 6rem;
+}
+
+.subsection:last-child {
+  margin-bottom: 0;
+}
+
 .section-title {
   color: #2563eb !important;
   text-align: center;

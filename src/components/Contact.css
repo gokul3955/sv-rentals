@@ -1,19 +1,27 @@
 .contact-section {
   background: #E8EDFF;
-  padding: 6rem 2rem;
-  min-height: 500px;
+  padding: 8rem 0 6rem 0;
+  min-height: 100vh;
   position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-container {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .section-title {
-  color: #1f2937;
+  color: #2563eb;
   text-align: center;
   font-size: 3.5rem;
+  margin-top: 2rem;
   margin-bottom: 4rem;
   font-weight: 800;
   font-family: 'Inter', sans-serif;
