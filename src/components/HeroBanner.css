@@ -12,7 +12,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  filter: brightness(1.29) contrast(1.1);
+  filter: brightness(1.05) contrast(1.1);
 }
 
 .hero-banner::before {
