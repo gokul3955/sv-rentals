@@ -5,21 +5,18 @@ const pillarBoxes = [
   {
     name: "Small Pillar Box",
     size: "1.5ft x 1.5ft x 6ft",
-    rent: "₹50/Day",
     imageUrl: "/api/placeholder/300/200",
     hasImage: true
   },
   {
     name: "Medium Pillar Box",
     size: "2ft x 2ft x 7ft",
-    rent: "₹70/Day",
     imageUrl: "/api/placeholder/300/200",
     hasImage: false
   },
   {
     name: "Large Pillar Box",
     size: "2.5ft x 2.5ft x 8ft",
-    rent: "₹90/Day",
     imageUrl: "/api/placeholder/300/200",
     hasImage: false
   },
@@ -29,21 +26,18 @@ const centeringSheets = [
   {
     name: "Small Centering Sheet",
     size: "2ft x 2ft",
-    rent: "₹25/Day",
     imageUrl: "/api/placeholder/300/200",
     hasImage: true
   },
   {
     name: "Medium Centering Sheet",
     size: "3ft x 2.5ft",
-    rent: "₹30/Day",
     imageUrl: "/api/placeholder/300/200",
     hasImage: false
   },
   {
     name: "Large Centering Sheet",
     size: "4ft x 3ft",
-    rent: "₹40/Day",
     imageUrl: "/api/placeholder/300/200",
     hasImage: false
   },
@@ -88,7 +82,6 @@ const ProductSection = () => {
                   <h3 className="product-name">{product.name}</h3>
                   <div className="product-details">
                     <p><strong>Size:</strong> {product.size}</p>
-                    <p><strong>Rent:</strong> {product.rent}</p>
                   </div>
                   <button 
                     className="book-btn"
@@ -130,7 +123,6 @@ const ProductSection = () => {
                   <h3 className="product-name">{sheet.name}</h3>
                   <div className="product-details">
                     <p><strong>Size:</strong> {sheet.size}</p>
-                    <p><strong>Rent:</strong> {sheet.rent}</p>
                   </div>
                   <button 
                     className="book-btn"
