@@ -12,6 +12,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
+  filter: brightness(1.29) contrast(1.1);
 }
 
 .hero-banner::before {
@@ -21,7 +22,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
