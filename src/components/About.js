@@ -5,12 +5,12 @@ const About = () => {
   return (
     <section id="about" className="about-section">
       <div className="about-container">
-        <h2 className="section-title">About SV Rentals</h2>
+        <h2 className="section-title">About CSR Rentals</h2>
         
         <div className="about-content">
           <div className="about-text">
             <p>
-              SV Rentals is a trusted construction materials rental company serving the Tirupati region. 
+              CSR Rentals is a trusted construction materials rental company serving the Tirupati region. 
               We provide high-quality construction materials including Square Pillar Boxes and Centering Sheets 
               for your construction projects.
             </p>

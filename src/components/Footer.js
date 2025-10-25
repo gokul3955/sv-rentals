@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>© 2025 SV Rentals | Phone / WhatsApp: +91 8501839285</p>
+        <p>© 2025 CSR Rentals | Phone / WhatsApp: +91 8501839285</p>
       </div>
     </footer>
   );

@@ -28,19 +28,7 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <div className="logo-section">
-          <div className="logo">
-            <img 
-              src={`/logo192.png?v=${Date.now()}`} 
-              alt="SV Rentals Logo" 
-              className="logo-image"
-              onError={(e) => {
-                e.target.style.display = 'none';
-                e.target.nextSibling.style.display = 'flex';
-              }}
-            />
-            <span className="logo-text" style={{display: 'flex'}}>SV</span>
-          </div>
-          <h1 className="company-name">SV Rentals</h1>
+          <h1 className="company-name">CSR Rentals</h1>
         </div>
         <nav className="navigation">
           <a href="#home" className="nav-link" onClick={(e) => handleNavClick(e, 'home')}>Home</a>

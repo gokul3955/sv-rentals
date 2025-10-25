@@ -4,49 +4,61 @@ import "./ProductSection.css";
 const pillarBoxes = [
   {
     name: "Small Pillar Box",
-    size: "1.5ft x 1.5ft x 6ft",
-    imageUrl: "/api/placeholder/300/200",
+    imageUrl: "/pillar-box-1.jpg",
     hasImage: true
   },
   {
     name: "Medium Pillar Box",
-    size: "2ft x 2ft x 7ft",
-    imageUrl: "/api/placeholder/300/200",
-    hasImage: false
+    imageUrl: "/pillar-box-2.jpg",
+    hasImage: true
   },
   {
     name: "Large Pillar Box",
-    size: "2.5ft x 2.5ft x 8ft",
-    imageUrl: "/api/placeholder/300/200",
-    hasImage: false
+    imageUrl: "/pillar-box-1.jpg",
+    hasImage: true
   },
 ];
 
 const centeringSheets = [
   {
     name: "Small Centering Sheet",
-    size: "2ft x 2ft",
-    imageUrl: "/api/placeholder/300/200",
+    imageUrl: "/smallsheet-1.jpeg",
     hasImage: true
   },
   {
     name: "Medium Centering Sheet",
-    size: "3ft x 2.5ft",
-    imageUrl: "/api/placeholder/300/200",
-    hasImage: false
+    imageUrl: "/Medium Centering Sheet.jpeg",
+    hasImage: true
   },
   {
     name: "Large Centering Sheet",
-    size: "4ft x 3ft",
-    imageUrl: "/api/placeholder/300/200",
-    hasImage: false
+    imageUrl: "/Large Centering Sheet.jpeg",
+    hasImage: true
+  },
+];
+
+const ladders = [
+  {
+    name: "Small Ladder",
+    imageUrl: "/Small ladder.jpeg",
+    hasImage: true
+  },
+  {
+    name: "Medium Ladder",
+    imageUrl: "/Mediumladder.jpeg",
+    hasImage: true
+  },
+  {
+    name: "Large Ladder",
+    imageUrl: "/Largeladder.jpeg",
+    hasImage: true
   },
 ];
 
 const ProductSection = () => {
   const handleBookNow = (productName) => {
     const phoneNumber = "918501839285";
-    const message = `Hi, I'm interested in booking ${productName} from SV Rentals.`;
+          const message = `Hi, I'm interested in booking ${productName} from CSR Rentals.`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -81,7 +93,7 @@ const ProductSection = () => {
                 <div className="product-info">
                   <h3 className="product-name">{product.name}</h3>
                   <div className="product-details">
-                    <p><strong>Size:</strong> {product.size}</p>
+                    {/* Size removed */}
                   </div>
                   <button 
                     className="book-btn"
@@ -122,11 +134,52 @@ const ProductSection = () => {
                 <div className="product-info">
                   <h3 className="product-name">{sheet.name}</h3>
                   <div className="product-details">
-                    <p><strong>Size:</strong> {sheet.size}</p>
+                    {/* Size removed */}
                   </div>
                   <button 
                     className="book-btn"
                     onClick={() => handleBookNow(sheet.name)}
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Ladders */}
+        <div className="subsection">
+          <h2 className="section-title">Ladders</h2>
+          <div className="products-grid">
+            {ladders.map((ladder, index) => (
+              <div key={index} className="product-card">
+                <div className="product-image">
+                  {ladder.hasImage ? (
+                    <img 
+                      src={ladder.imageUrl} 
+                      alt={ladder.name}
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                  ) : null}
+                  <div 
+                    className="placeholder-image"
+                    style={{ display: ladder.hasImage ? 'none' : 'flex' }}
+                  >
+                    <span>{ladder.name}</span>
+                  </div>
+                </div>
+                <div className="product-info">
+                  <h3 className="product-name">{ladder.name}</h3>
+                  <div className="product-details">
+                    {/* Size removed */}
+                  </div>
+                  <button 
+                    className="book-btn"
+                    onClick={() => handleBookNow(ladder.name)}
                   >
                     Book Now
                   </button>
